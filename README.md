@@ -1,6 +1,6 @@
-# World Creator for ERC 2025
+# Marsyard Simulation with Automated Randomised Object Placement
 
-This Python script helps teams and organizers generate diverse `.sdf` world files for testing ERC 2025 Challenge 1 solutions.
+This Repo helps teams and organizers generate diverse `.sdf` world files for testing ERC 2025 Challenge 1 solutions.
 
 ## Overview
 
@@ -8,21 +8,21 @@ This work extends the efforts of the Mindcloud team, aiming to simplify testing 
 
 The script modifies an existing `.sdf` file by assigning each specified landmark a new random location. This new location is constrained by an offset, ensuring the landmark remains within a 1-unit radius circle of its original pose.
 
-*   **Teams:** Can use this to test model robustness against minor world variations.
-*   **Organizers:** Can use this to create slightly different worlds for various teams or rounds.
-
-## How to Add More Models
+*   **Teams** can leverage this environment to rigorously evaluate the robustness and adaptability of their models under controlled yet dynamically varied simulation conditions.
+*   The adopted approach is modular and inherently scalable, enabling seamless integration of new models into the environment. It is designed for fine-tuning and offers high adaptability to accommodate evolving scene composition requirements.
+---
+## Installation and Setup
 
 When adding new Gazebo models, we recommend the following:
 
 *   **Best Source:** Use **Gazebo Fuel** ([https://app.gazebosim.org/fuel/models](https://app.gazebosim.org/fuel/models)).
     *   Many third-party model sources can be unreliable due to inconsistent folder structures or missing files required for Gazebo simulation.
     *   Models from organizations like **OpenRobotics** and **GoogleDeepmind** on Gazebo Fuel are generally well-structured and require minimal modification.
-*   **Included Models:** Some models are provided [mention where, e.g., "in the `models/` folder" or "via the Google Drive link: [your link here]"]. You can add more using the method above.
+*   **Included Models:** Some models are provided [mention where, e.g., "in the `models/` folder" or "via the Google Drive link: [https://drive.google.com/drive/folders/13MkeOTBgDPfwtX9C9xKaOF1cH7xR4BWC?usp=sharing]"]. You can add more using the method above.
 
 *This script and model integration approach were tested on ROS 2 Humble with Gazebo Fortress.*
-
-## Usage
+---
+## Configuration
 
 To use the script, you'll need to modify its Python source code:
 
