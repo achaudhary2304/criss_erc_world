@@ -21,7 +21,7 @@ When adding new Gazebo models, we recommend the following:
 *   **Included Models:** Some models are provided [mention where, e.g., "in the `models/` folder" or "via the Google Drive link: [https://drive.google.com/drive/folders/13MkeOTBgDPfwtX9C9xKaOF1cH7xR4BWC?usp=sharing]"]. You can add more using the method above.
 
 *This script and model integration approach were tested on ROS 2 Humble with Gazebo Fortress.*
----
+
 ## Configuration
 
 To use the script, you'll need to modify its Python source code:
