@@ -10,8 +10,7 @@ The script modifies an existing `.sdf` file by assigning each specified landmark
 
 *   **Teams** can leverage this environment to rigorously evaluate the robustness and adaptability of their models under controlled yet dynamically varied simulation conditions.
 *   The adopted approach is modular and inherently scalable, enabling seamless integration of new models into the environment. It is designed for fine-tuning and offers high adaptability to accommodate evolving scene composition requirements.
----
-## Installation and Setup
+  ## Installation and Setup
 
 When adding new Gazebo models, we recommend the following:
 
