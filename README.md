@@ -38,6 +38,8 @@ To use the script, you'll need to modify its Python source code:
 
 After configuration, run the Python script.
 Make sure that you export the path to your models 
-##Improvements 
+
+
+## Improvements 
   We are testing compatibility with ROS2 Jazzy and will update ASAP
-  Right now because of the uneven terrain  as there is no heightmap and a confirmed way to determine the z coordinate sometimes the models are not full visible so adding more poses to the list of pose in the script  is more challenging 
+  Right now because of the uneven terrain  as there is no heightmap and a confirmed way to determine the z coordinate sometimes the models      are not full visible so adding more poses to the list of pose in the script  is more challenging 
