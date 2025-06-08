@@ -4,21 +4,17 @@ import math
 #pose is of the form "x y z r p yaw"
 #make sure that the x and y corrdinates are compatibale with the height of the mars_yard map 
 poses = [
-    "2 -1 0 0 0 0",
-    "3 -2 0 0 0 0", 
-    "4 -3 0 0 0 0",
-    "5 -4 0 0 0 0",
-    "10 -5 0 0 0 0"
+    "0 0 0 0 0 0",
+    "3 12 0 0 0 0", 
+    "3 -1 0 0 0 0",
 ]
 
 # list of the landmarks 
 #you need to make sure that you copy the exact model names for it to work 
 landmarks = [
-    "helmet",
+    "Crosley_Alarm_Clock_Vintage_Metal",
     "antenna", 
-    "car_wheel",
-    "cordless_drill",
-    "DPC_Handmade_Hat_Brown"
+    "Squirrel",
 ]
 
 #helper function 
@@ -33,12 +29,15 @@ def generate_random_landmark_section(landmarks, poses):
         # Generate random  float offsets in the range (0,1) for both the x and y 
         #essentialy this will add the object to circle of radius 1 with the centre at x and y 
         rand_x_offset = random.uniform(0,1)
-        rand_y_offset = random.uniform(0,1)
-
         
         new_x = float(x) + rand_x_offset
         new_y = float(y) + math.sqrt(1 - rand_x_offset**2) * random.choice([-1, 1]) 
-        
+        # new_x = float(x) 
+        # new_y = float(y) 
+        #if you don't want the random offsets
+
+
+
         # Construct the new pose string
         modified_pose = f"{new_x:.2f} {new_y:.2f} {z} {r} {p} {yaw}"
         landmark_section += f"<include>\n  <uri>model://{landmark}</uri>\n  <pose>{modified_pose}</pose>\n</include>\n"
@@ -73,4 +72,4 @@ def randomize_landmarks_in_sdf_file(input_filename, output_filename):
 # Usage example - replace with your actual file paths
 if __name__ == "__main__":
     #better to use with absolute paths 
-    randomize_landmarks_in_sdf_file("/home/aryan/husarion_ws2/src/husarion_gz_worlds/worlds/mars_yard.sdf", "/home/aryan/husarion_ws2/src/husarion_gz_worlds/worlds/mars_yard_6.sdf")
+    randomize_landmarks_in_sdf_file("/home/aryan/husarion_ws2/src/husarion_gz_worlds/worlds/mars_yard.sdf", "/home/aryan/husarion_ws2/src/husarion_gz_worlds/worlds/mars_yard_2.sdf")
