@@ -21,7 +21,7 @@ When adding new Gazebo models, we recommend the following:
 
 - **Best Source:** Use **Gazebo Fuel** ([https://app.gazebosim.org/fuel/models](https://app.gazebosim.org/fuel/models)).
   - Many third-party model sources can be unreliable due to inconsistent folder structures or missing files required for Gazebo simulation.
-  - Models from organizations **OpenRobotics** and **GoogleDeepmind** on Gazebo Fuel are generally well-structured and require minimal modification.
+  - Models from organizations **OpenRobotics** and **GoogleResearch** on Gazebo Fuel are generally well-structured and require minimal modification.
 - **Included Models:** Some models are provided in the models folder of the google drive. You can add more using the method above.
 
 *This script and model integration approach were tested on ROS 2 Humble with Gazebo Fortress.*
